@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+/* Stile Header */
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: black;
+}
+
+.speaker-view, .fullscreen {
+  /* DEBUG */
+  border: 1px solid white;
+  color: white;
+  height: fit-content;
+}
+
+/* Stile Main */
+
+.main-container {
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 80px auto 60px auto;
+}
+
+.user {
+  /* DEBUG */
+  border: 1px solid white;
+  width: 200px;
+  height: 125px;
+  margin: 6px 3px;
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: lightgray;
+}
+
+/* Stile Footer */
+
+footer {
+  height: 60px;
+  background-color: rgb(37, 37, 37);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  width: 20%;
+  display: flex;
+}
+
+.footer-middle {
+  width: 73%;
+  display: flex;
+}
+
+.footer-middle > div {
+  margin: 0 10px;
+}
+
+.footer-right {
+  width: 7%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  height: 100%;
+}
+
+.end-meeting {
+  color: red;
+}
