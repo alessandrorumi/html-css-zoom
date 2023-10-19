@@ -6,6 +6,12 @@
 
 body {
   background-color: black;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.fa-chevron-up {
+  font-size: 10px;
 }
 
 /* Stile Header */
@@ -23,10 +29,12 @@ header {
 }
 
 .speaker-view, .fullscreen {
-  /* DEBUG */
-  border: 1px solid white;
-  color: white;
   height: fit-content;
+  background-color: rgb(66, 66, 66);
+  margin: 2px 5px;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
 /* Stile Main */
@@ -40,19 +48,21 @@ header {
 }
 
 .user {
-  /* DEBUG */
-  border: 1px solid white;
   width: 200px;
   height: 125px;
   margin: 6px 3px;
   position: relative;
 }
 
+.image {
+  width: 100%;
+}
+
 .name {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: lightgray;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 /* Stile Footer */
@@ -64,14 +74,26 @@ footer {
   width: 100%;
   bottom: 0;
   z-index: 10;
-  color: white;
   display: flex;
   align-items: center;
+  font-size: 12px;
+}
+
+footer i {
+  margin-bottom: 5px;
 }
 
 .footer-left {
   width: 20%;
   display: flex;
+  align-items: center;
+}
+
+.footer-left > div {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-middle {
@@ -80,8 +102,16 @@ footer {
 }
 
 .footer-middle > div {
-  margin: 0 10px;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+footer .fa-solid:not(.fa-chevron-up) {
+  font-size: 20px;
+}
+
 
 .footer-right {
   width: 7%;
